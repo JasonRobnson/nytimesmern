@@ -124,7 +124,7 @@ db.Article.remove({})
     return db.Article.collection.insertMany(articleSeed)
   })
   .then(data => {
-    console.log(data.insertedIds.length + " records inserted!");
+    console.log(data.insertedIds + " records inserted!");
     process.exit(0);
   })
   .catch(err => {
